@@ -1,0 +1,4 @@
+header#body-header, section#main, section#posts, section#comments, footer#body-footer {
+  border: 1px solid grey;
+  margin: 5px;
+}
