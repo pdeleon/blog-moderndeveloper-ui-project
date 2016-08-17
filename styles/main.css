@@ -15,7 +15,7 @@ header {
   background-color: #302e2f;
   font-family: "Roboto Slab", "Times New Roman", serif;
   color: #7b7b7b;
-  padding: 1em 3em;
+  padding: 1.5em 3em;
 }
 
 header > div {
@@ -30,6 +30,7 @@ header div.title > * {
 header h2 {
   font-weight: normal;
   font-size: 1em;
+  margin: 0;
 }
 
 header h2 .highlight {
@@ -39,8 +40,8 @@ header h2 .highlight {
 
 header div.search {
   float: right;
-  padding-top: 0.5em;
   font-size: 1em;
+  padding-top: 0.2em;
 }
 
 header div.search input[type="text"] {
@@ -58,11 +59,237 @@ header div.search button.searchButton {
   color: #cfcfcf;
   border: 0;
   font-size: 1em;
-  padding: 0.36em 0.5em;
+  padding: 0.36em 0.7em;
   margin-left: -0.3em;
 }
 
-section#main, section#posts, section#comments, footer#body-footer {
+section#main {
+  padding: 2.5em 5em;
+}
+
+section#main article,
+section#main aside {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section#main article {
+  background-color: #fff;
+  color: #000;
+  width: 69%;
+
+}
+
+section#main article > h1,
+section#main article > h1 ~ * {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+section#main article > h1 ~ img {
+  margin: 2rem 0 1em;
+  width: 100%;
+}
+
+section#main article h1 {
+  text-align: justify;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+
+section#main article .time-tag {
+  color: #afafaf;
+  font-size: 0.9em;
+}
+
+section#main article .time-tag > * {
+  vertical-align: middle;
+}
+
+section#main article .time-tag #author-image {
+  padding: 0 0.2em;
+}
+
+section#main article a {
+  text-decoration: none;
+  color: #db3daf;
+}
+
+section#main article p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+section#main article h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #ae6fe6;
+}
+
+section#main article div.related-articles {
+  background-color: #e9e7e8;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1.5em 3em;
+}
+
+section#main article div.related-articles h2 {
+  color: #db3daf;
+}
+
+section#main article div.related-articles ol {
+  counter-reset: listCounter;
+  margin-left: 0;
+  padding-left: 5px;
+  color: #000;
+  font-size: 1em;
+}
+
+section#main article div.related-articles ol li {
+  position: relative;
+  padding-left: 3em;
+  margin: 0.45em 0;
+  list-style: none;
+  line-height: 1.8em;
+  cursor: pointer;
+
+}
+
+section#main article div.related-articles ol li a {
+  color: #000;
+  font-size: 1.1em;
+}
+
+section#main article div.related-articles ol li:hover a {
+  color: #ae6fe6;
+}
+
+section#main article div.related-articles ol li:before {
+  content: counter(listCounter);
+  counter-increment: listCounter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5;
+  color: #c0c0c0;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #c0c0c0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+section#main article div.related-articles ol li:hover:before {
+  border: 1px solid #ae6fe6;
+  color: #ae6fe6;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8;
+  left: -0.15em;
+  top: -0.15em;
+}
+
+section#main article div.related-articles ol li:active:before {
+  border: 2px solid #ae6fe6;
+  color: #fff;
+  background-color: #ae6fe6;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8;
+  left: -0.17em;
+  top: -0.17em;
+}
+
+section#main article div.related-articles ol li:after {
+  position: absolute;
+  top: -0.8em;
+  left: 0.75em;
+  width: 1px;
+  height: 200%;
+  content: '';
+  background-color: #c0c0c0;
+}
+
+section#main article div.tags-and-social {
+  padding: 1.5em 0;
+}
+
+section#main article div.tags-and-social > * {
+  display: inline-block;
+  width: 49%;
+}
+
+section#main article div.tags-and-social div.tags a {
+  color: #c0c0c0;
+  border: 1px solid #c0c0c0;
+  border-radius: 20em;
+  font-size: 0.8em;
+  padding: 0.25em 0.75em;
+}
+
+section#main article div.tags-and-social div.tags a:hover {
+  color: #db3daf;
+  border-color: #db3daf;
+}
+
+section#main article div.tags-and-social ul.social {
+  text-align: right;
+}
+
+section#main article div.tags-and-social ul.social li {
+  list-style: none;
+  display: inline-block;
+}
+
+section#main article div.tags-and-social ul.social li a i {
+  color: #ddd;
+  border: 2px solid #ddd;
+  display: inline-block;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 1.8em;
+  height: 1.8em;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.35em 0.2em;
+}
+
+section#main article div.tags-and-social ul.social li a:hover i.fa-twitter {
+  color: #00aced;
+  border-color: #00aced;
+}
+
+section#main article div.tags-and-social ul.social li a:hover i.fa-facebook {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+section#main article div.tags-and-social ul.social li a:hover i.fa-github {
+  color: #171516;
+  border-color: #171516;
+}
+
+section#main article div.tags-and-social ul.social li a:hover i.fa-google-plus {
+  color: #dd4b39;
+  border-color: #dd4b39;
+}
+
+section#main aside {
+  font-size: 0.8em;
+  color: #4990d8;
+  width: 29%;
+}
+
+ul.nav-tabs li a {
+  font-size: 1.2em;
+}
+
+section#comments, footer#body-footer {
   border: 1px solid grey;
 }
 
