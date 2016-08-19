@@ -1,165 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title></title>
-  <meta charset="utf-8">
-   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Blog.Modern Developer</title>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100'
+          rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
 </head>
 <body>
-
-
-<header id="body-header">
-  
-  <div class="header-site">
-    <img src="images/blog-icon.jpg" class="header-img">
-    
-    <h2 class="header-h2"><span class="header-site-blog">Blog</span>.ModerDeveloper</hw>
-  </div>
-
-  <div class="header-search">
-
-    <div class="header-search-icon"></div>
-    <input class="header-search-input" type="search" placeholder="Search...">
-    <i class="fa fa-search" aria-hidden="true"></i>
-  </div>
-  
-
+<header>
+    <div class="title">
+        <img src="images/blog-icon.png" class="header-img">
+        <h2><span class="highlight">Blog</span>.Modern Developer</h2>
+    </div>
+    <div class="search">
+        <!--<div class="header-search-icon"></div>-->
+        <input type="text" id="searchTerm" name="searchTerm" placeholder="Search..."/>
+        <button class="searchButton"><i class="fa fa-search"></i></button>
+    </div>
 </header>
 
 <section id="main">
-  <article>
-    
-    <header class="main-header">
-      <h1>Image Optimization with Cloudinary</h1>
-
-      <div><span>2 days ago by</span> <img src="images/Paul.jpg"> Pual Irish</div>
-    </header>
-    
-    <img src="images/article.jpg" alt="Work Station">
-
-    <p>We're always looking for ways to improve site speed; we lazy load; minify and concatenate, create sprites, experiment with caching, and just about everyting else we can think of.</p>
-    
-    <p>The idea behind image optimization is simple but the execution hasn't always been: each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary: uploading, storing, manipulating, and delivering images and videos on the web.</p>
-
-    <h2>Using Cloudinary</h2>
-
-    <p>There are many use cases for a service like Cloudinary. When I think about my site, I see one obvious need: resized, optimized images on post list pages. <span>Google PageSpeed</span> crucifies my site for image size and I can't blame them: I have a regex routine that searches for the first image in a post and uses that as the post image, but the routine doesn't optimize images, so if the image is ver large, I may scale it down with HTML attributes but the download size is still massive.</p>
-    
-    <ul>
-      <li>Javascript
-        <pre>
-        <code>
-          var myArray=[6,5,4,3,1,2];
-          myArray.sort();
-          console.log(myArray);//-> 1,2,3,4,5,6
-        </code>
-      </pre>
-      </li>
-      <li>Result</li>
-    </ul>
-
-    <p>If you're looking to serve media via the &lt;picture&gt; element for different media queries, <span>Cloudinary has an excellent structure</span> for doing that well.</p>
-    
-    <p>Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant cloud hosting as your images will have!</p>
-
-    <h2>Try Cloudinary!</h2>
-    
-    <p>Cloudinary is an awesome one-stop shop for uploading, storing, manipulating, and delivering images and video. The APIs are all intuitive, effective, and easy to use. The optimization plugs are all useful and the included face detection, sepia/greyscale transformations, and social media image creation a huge, handy bonus.</p>
-    
-    <div>
-      <h2>Related Articles on Encyclopedia.Moder Developer</h2>
-
-      <p><span>1</span> 5 More Awesome New Moxilla Technologies You've Never Heard Of</p>
-
-      <p><span>2</span> Git Hook - npm install if package.json is Modified</p>
-
-      <p><span>3</span> Complete Server Stability and Security with Plesk</p>
-
-      <p><span>4</span> Use Mozilla Firefox DevTools in Chrome</p>
-
-      <p><span>5</span> Great Tools to Use in Your Projects</p>
-  
-      <footer class="main-footer">
-        <div>
-          <input type="submit" value="Optimization">
-          <input type="submit" value="Cloudinary">
-          <input type="submit" value="JPEG">
-          <input type="submit" value="Tutorial">
+    <article>
+        <h1>Image Optimization with Cloudinary</h1>
+        <div class="time-tag">
+            <span>2 days ago by</span>
+            <img id="author-image" src="images/Paul.jpg"/>
+            <a href="#" id="author-name">Pual Irish</a>
         </div>
+        <img src="images/article.jpg" alt="Work Station">
+
+        <p>We're always looking for ways to improve site speed; we lazy load; minify and concatenate, create sprites,
+            experiment with caching, and just about everyting else we can think of.</p>
+
+        <p>The idea behind image optimization is simple but the execution hasn't always been: each of those
+            optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary:
+            uploading, storing, manipulating, and delivering images and videos on the web.</p>
+
+        <h2>Using Cloudinary</h2>
+
+        <p>There are many use cases for a service like Cloudinary. When I think about my site, I see one obvious need:
+            resized, optimized images on post list pages. <a href="#">Google PageSpeed</a> crucifies my site for
+            image size
+            and I can't blame them: I have a regex routine that searches for the first image in a post and uses that as
+            the post image, but the routine doesn't optimize images, so if the image is ver large, I may scale it down
+            with HTML attributes but the download size is still massive.</p>
+
         <ul>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          <!-- Uses uppercase instead of lowercase because Google icons were updated accoring to Google's recent changes -->
-          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li>Javascript
+                <pre>
+<code>
+  1 var myArray=[6,5,4,3,1,2];
+  2 myArray.sort();
+  3 console.log(myArray);//-> 1,2,3,4,5,6
+</code>
+            </pre>
+            </li>
+            <li>Result</li>
         </ul>
-      </footer>
-    </div>
 
-  </article>
+        <p>If you're looking to serve media via the &lt;picture&gt; element for different media queries, <a
+                href="#">Cloudinary has an excellent structure</a> for doing that well.</p>
+
+        <p>Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant
+            cloud hosting as your images will have!</p>
+
+        <h2>Try Cloudinary!</h2>
+
+        <p><a href="#">Cloudinary</a> is an awesome one-stop shop for uploading, storing, manipulating, and delivering
+            images
+            and video.
+            The APIs are all intuitive, effective, and easy to use. The optimization plugs are all useful and the
+            included face detection, sepia/greyscale transformations, and social media image creation a huge, handy
+            bonus.</p>
+
+        <div class="related-articles">
+            <h2>Related Articles on Encyclopedia.Modern Developer</h2>
+            <ol>
+                <li><a href="#">5 More Awesome New Mozilla Technologies You've Never Heard Of</a></li>
+                <li><a href="#">Git Hook - npm install if package.json is Modified</a></li>
+                <li><a href="#">Complete Server Stability and Security with Plesk</a></li>
+                <li><a href="#">Use Mozilla Firefox DevTools in Chrome</a></li>
+                <li><a href="#">Great Tools to Use in Your Projects</a></li>
+            </ol>
+        </div>
+        <div class="tags-and-social">
+            <div class="tags">
+                <a href="#">Optimization</a>
+                <a href="#">Cloudinary</a>
+                <a href="#">JPEG</a>
+                <a href="#">Tutorial</a>
+            </div>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <!-- Uses uppercase instead of lowercase because Google icons were updated according to Google's
+                recent changes -->
+            </ul>
+        </div>
+
+    </article>
+    <aside>
+        <div class="tabs">
+            <ul class="tabs-list">
+                <li class="active">
+                    <a href="#recent-articles">
+                        Recent Articles
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#upcoming-posts">
+                        Upcoming Posts
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tabs-content">
+                <div class="tab-pane active" id="recent-articles">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">a day ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">2 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All Trappings</div>
+                                <div class="article-time-tag">12 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">33 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">54 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All trappings</div>
+                                <div class="article-time-tag">64 days ago</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="load-more-link"><a href="#">Load More</a></div>
+                </div>
+                <div class="tab-pane" id="upcoming-posts">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">Coming Soon!</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">Coming Soon!</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All Trappings</div>
+                                <div class="article-time-tag">Coming Soon!</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">TBD</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">TBD</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All trappings</div>
+                                <div class="article-time-tag">TBD</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="load-more-link"><a href="#">Load More</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="email-subscription">
+            <input type="email" id="email" name="email" placeholder="Your Email"/>
+            <button>Subscribe</button>
+        </div>
+    </aside>
 </section>
 
-<section id="posts">
-  <ul>
-    <li><h3>Recent Articles</h3>
-      <ul>
-        <li>Getting Your Selected Articles Published on Encyclopedia <br> <span>a day ago</span></li>
-        <li>Welcome to Encyclopedia Modern Developer<br><span>2 days ago</span></li>
-        <li>All Trappings<br><span>12 days ago</span></li>
-        <li>Getting Your Selected Articles Published on Encyclopedia<br><span>33 days ago</span></li>
-        <li>Welcome to Encyclopedia Modern Developer<br><span>54 days ago</span></li>
-        <li>All trappings<br><span>64 days ago</span></li>
-        <li>LOAD MORE</li>
-      </ul>
-    </li>
-
-    <li><h3>Upcoming Posts</h3>
-      <ul>
-        <li>Uganda July 5 2016</li>
-        <li>Panama July 6 2016</li>
-        <li>Chad July 7 2016</li>
-        <li>Suriname July 8 2016</li>
-        <li>Canada July 9 2016</li>
-        <li>Mauritius July 10 2016</li>
-        <li>LOAD MORE</li>
-      </ul>
-    </li>
-    
-  </ul>
-
-  <input type="text"> <input type="submit" value="Subscribe">
-  
-</section>
 
 <section id="comments">
 
-  <p>Post Comment</p>
+    <p>Post Comment</p>
 
-  <textarea placeholder="Your Comment"></textarea>
+    <textarea placeholder="Your Comment"></textarea>
 
-   <input type="submit" value="Post">
+    <input type="submit" value="Post">
 
-  <div class="comment">
-    
-    <div class="comment-post">
-      <img src="images/Rory.jpg" alt="userimg">
-      <span class="comment-user">Rory Duncan</span> <span class="comment-time">1 days ago</span>
-      <p>Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I'm very interested in these methods for developing a "Sustainable Web Design" strategy. I was woring on a "green boilerplate" with tools like this a few years ago, but now the route to go seems to be bundling cloud services into the design workflow.</p>
-      <span>Reply</span>
+    <div class="comment">
 
-      <div class="comment-post-reply">
-        <img src="images/Peter.jpg" alt="userimg">
-        <span class="comment-user">Peter Chang</span> <span class="comment-time">2 days ago</span>
-        <p>I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a try to this Cloudinary. Thanks!</p>
-        <span>Reply</span>  
-      </div>
+        <div class="comment-post">
+            <img src="images/Rory.jpg" alt="userimg">
+            <span class="comment-user">Rory Duncan</span> <span class="comment-time">1 days ago</span>
+            <p>Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I'm
+                very interested in these methods for developing a "Sustainable Web Design" strategy. I was woring on a
+                "green boilerplate" with tools like this a few years ago, but now the route to go seems to be bundling
+                cloud services into the design workflow.</p>
+            <span>Reply</span>
+
+            <div class="comment-post-reply">
+                <img src="images/Peter.jpg" alt="userimg">
+                <span class="comment-user">Peter Chang</span> <span class="comment-time">2 days ago</span>
+                <p>I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a try
+                    to this Cloudinary. Thanks!</p>
+                <span>Reply</span>
+            </div>
+
+        </div>
 
     </div>
 
-  </div>
-  
 </section>
 
 <footer class="footer">
