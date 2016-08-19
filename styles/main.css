@@ -98,16 +98,16 @@ section#main article h1 {
   margin-bottom: 0.2em;
 }
 
-section#main article .time-tag {
+section#main article div.time-tag {
   color: #afafaf;
   font-size: 0.9em;
 }
 
-section#main article .time-tag > * {
+section#main article div.time-tag > * {
   vertical-align: middle;
 }
 
-section#main article .time-tag #author-image {
+section#main article div.time-tag #author-image {
   padding: 0 0.2em;
 }
 
@@ -116,9 +116,15 @@ section#main article a {
   color: #db3daf;
 }
 
+section#main article a:hover {
+  text-decoration: underline;
+}
+
 section#main article p {
   font-size: 1.2em;
   line-height: 1.5;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 section#main article h2 {
@@ -279,17 +285,139 @@ section#main article div.tags-and-social ul.social li a:hover i.fa-google-plus {
   border-color: #dd4b39;
 }
 
-section#main aside {
-  font-size: 0.8em;
-  color: #4990d8;
-  width: 29%;
+aside {
+  width: 28%;
+  margin-left: 2%;
 }
 
-ul.nav-tabs li a {
-  font-size: 1.2em;
+div.tabs ul.tabs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.tabs ul.tabs-list li {
+  float: left;
+  border: 1px solid #353334;
+  background-color: #353334;
+}
+
+div.tabs ul.tabs-list li a {
+  display: block;
+  padding: 0.5em 0.8em;
+  color: #4b95e0;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+div.tabs ul.tabs-list li.active {
+  position: relative;
+  background-color: #272526;
+  border-color: #272526;
+  border-radius: 5px 5px 0px 0px;
+}
+
+div.tabs div.tabs-content {
+  border: 1px solid #272526;
+  background-color: #272526;
+  clear: both;
+  border-radius: 0px 5px 5px;
+}
+
+div.tabs div.tabs-content div.tab-pane {
+  display: none;
+  padding: 1em;
+}
+
+div.tabs div.tabs-content div.tab-pane.active {
+  display: block;
+}
+
+div.tabs div.tabs-content div.tab-pane ul {
+  padding: 0 1em;
+}
+
+div.tabs div.tabs-content div.tab-pane ul li {
+  list-style: none;
+  padding: 1.2em 0;
+  border-bottom: 1px solid #444;
+  font-weight: 500;
+}
+
+div.tabs div.tabs-content div.tab-pane ul li a {
+  text-decoration: none;
+}
+
+div.tabs div.tabs-content div.tab-pane ul li a div.article-title {
+  color: #537193;
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 0.8em;
+}
+
+div.tabs div.tabs-content div.tab-pane ul li a:hover div.article-title {
+  text-decoration: underline;
+}
+
+div.tabs div.tabs-content div.tab-pane ul li a div.article-time-tag {
+  color: #5f5f5f;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+div.tabs div.tabs-content div.tab-pane ul li:last-child {
+  border-bottom: 0;
+}
+
+div.tabs div.tabs-content div.tab-pane div.load-more-link {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 2em 0 0;
+  padding: 1.5em 0 0;
+  border-top: 1px solid #2d3741;
+}
+
+div.tabs div.tabs-content div.tab-pane div.load-more-link a {
+  color: #4b95e0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+aside div.email-subscription {
+  margin: 2.5em 0;
+  font-size: 1em;
+  color: #fff;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+aside div.email-subscription input[type="email"] {
+  background-color: #6a6869;
+  border: 0;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: inherit;
+  padding: 0.6em 0.5em;
+  border-radius: 3px;
+  display: table-cell;
+  width: 68%;
+}
+
+aside div.email-subscription button {
+  background-color: #f263cf;
+  border: 0;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 100;
+  font-family: inherit;
+  padding: 0.6em 0.8em;
+  border-radius: 3px;
+  margin-left: 0.8em;
+  display: table-cell;
+  width: 28%;
 }
 
 section#comments, footer#body-footer {
   border: 1px solid grey;
 }
-

@@ -104,48 +104,114 @@
 
     </article>
     <aside>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active">
-                <a href="#" aria-controls="recent-articles" role="tab" data-toggle="tab">
-                    Recent Articles
-                </a>
-            </li>
-            <li role="presentation">
-                <a href="#" aria-controls="upcoming-posts" role="tab" data-toggle="tab">
-                    Upcoming Posts
-                </a>
-            </li>
-        </ul>
+        <div class="tabs">
+            <ul class="tabs-list">
+                <li class="active">
+                    <a href="#recent-articles">
+                        Recent Articles
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#upcoming-posts">
+                        Upcoming Posts
+                    </a>
+                </li>
+            </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="recent-articles">
-                <ul>
-                    <li>Getting Your Selected Articles Published on Encyclopedia <br> <span>a day ago</span></li>
-                    <li>Welcome to Encyclopedia Modern Developer<br><span>2 days ago</span></li>
-                    <li>All Trappings<br><span>12 days ago</span></li>
-                    <li>Getting Your Selected Articles Published on Encyclopedia<br><span>33 days ago</span></li>
-                    <li>Welcome to Encyclopedia Modern Developer<br><span>54 days ago</span></li>
-                    <li>All trappings<br><span>64 days ago</span></li>
-                    <li>LOAD MORE</li>
-                </ul>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="upcoming-posts">
-                <ul>
-                    <li>Uganda July 5 2016</li>
-                    <li>Panama July 6 2016</li>
-                    <li>Chad July 7 2016</li>
-                    <li>Suriname July 8 2016</li>
-                    <li>Canada July 9 2016</li>
-                    <li>Mauritius July 10 2016</li>
-                    <li>LOAD MORE</li>
-                </ul>
+            <!-- Tab panes -->
+            <div class="tabs-content">
+                <div class="tab-pane active" id="recent-articles">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">a day ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">2 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All Trappings</div>
+                                <div class="article-time-tag">12 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">33 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">54 days ago</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All trappings</div>
+                                <div class="article-time-tag">64 days ago</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="load-more-link"><a href="#">Load More</a></div>
+                </div>
+                <div class="tab-pane" id="upcoming-posts">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">Coming Soon!</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">Coming Soon!</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All Trappings</div>
+                                <div class="article-time-tag">Coming Soon!</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Getting Your Selected Articles Published on Encyclopedia
+                                </div>
+                                <div class="article-time-tag">TBD</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">Welcome to Encyclopedia Modern Developer</div>
+                                <div class="article-time-tag">TBD</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="article-title">All trappings</div>
+                                <div class="article-time-tag">TBD</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="load-more-link"><a href="#">Load More</a></div>
+                </div>
             </div>
         </div>
-
-
-        <input type="text"> <input type="submit" value="Subscribe">
+        <div class="email-subscription">
+            <input type="email" id="email" name="email" placeholder="Your Email"/>
+            <button>Subscribe</button>
+        </div>
     </aside>
 </section>
 
