@@ -1,3 +1,23 @@
-# md-Jackal-TP1
+# Blog.Modern Developer UI
 
-## Team Project 1: Build the UI for part of Blog.Modern Developer
+### Team Fabulous-Jackal ([Pdeleon](https://github.com/pdeleon) & [Aashishnagpal](https://github.com/aashishnagpal))
+
+**[UI Live Demo](https://pdeleon.github.io/blog-moderndeveloper-ui-project/)**
+
+
+**Workflow** 
+
+
+**Pdeleon managed the following sections:**
+
+- Added entire content to page
+- Footer
+- Comment section
+
+**Aashishnagpal managed the following sections:**
+
+- 
+
+
+
+

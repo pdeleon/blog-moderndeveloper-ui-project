@@ -418,10 +418,6 @@ aside div.email-subscription button {
   width: 28%;
 }
 
-section#comments, footer#body-footer {
-  border: 1px solid grey;
-}
-
 
 /*Styles by pj_deleon*/
 footer.footer {
@@ -434,7 +430,6 @@ footer.footer > div {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* border: 1px solid white;*/
   width: 100%;
   padding: 0 115px 0 115px;
 }
@@ -468,6 +463,9 @@ div.secondary-info a {
   text-decoration: none;
 }
 
+div.secondary-info a:hover {
+  text-decoration: underline;
+}
 
 /* COLORS*/
 .light-grey {
@@ -484,4 +482,127 @@ div.secondary-info a {
 }
 .roboto-slab {
   font-family: 'Roboto Slab', serif;
+}
+
+
+
+/*
+----------
+----------
+----------
+COMMENT SECTION
+----------
+----------
+----------
+*/
+
+
+section#comments {
+  padding: 0 80px 75px 80px;
+  width: 69%;
+}
+
+section#comments h2 {
+  margin: 5px auto 45px auto;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+section#comments div.comments-container {
+  margin: 0 3rem;
+}
+
+section#comments textarea {
+  width: 100%;
+  height: 115px;
+  background-color: #6A6869;
+  border: 2px solid #242424;
+  border-radius: 5px;
+  resize: none;
+  font-size: 1rem;
+  padding: 16px;
+  font-weight: 200;
+  outline: none;
+}
+
+section#comments button {
+  background-color: #f263cf;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 0.6em 0.8em;
+  width: 165px;
+  display: block;
+  margin: 16px auto 45px auto;
+  cursor: pointer;
+  outline: none;
+}
+
+section#comments button:hover {
+  background-color: #db3daf;
+}
+
+div.comment-list {
+  font-size: .875rem;
+}
+
+div.comment-post:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+div.user-img {
+  margin-right: 20px;
+}
+
+div.user-img img {
+  width: 58px;
+}
+
+div.user-img,
+div.comment-body {
+  float: left;
+}
+
+div.comment-body {
+  width: 80%;
+}
+
+div.comment-body a.user-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+div.comment-body a.user-name {
+  color: #fff;
+  font-weight: 300;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+div.comment-post {
+  margin-top: 45px;
+}
+
+span.comment-time-tag {
+  color: #5f5f5f;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+p.reply {
+  margin: 25px 0 0 0;
+  color: #db3daf;
+}
+
+p.reply:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.comment-reply {
+  margin-left: 10%;
 }

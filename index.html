@@ -218,29 +218,47 @@
 
 <section id="comments">
 
-    <p>Post Comment</p>
+    <div class="comments-container light-grey">
+        <div class="post-comment">
+            <h2>Post Comment</h2>
 
-    <textarea placeholder="Your Comment"></textarea>
+            <textarea placeholder="Your Comment" class="light-grey"></textarea>
 
-    <input type="submit" value="Post">
+            <button>Post</button> 
+        </div>
+        <!-- type="submit" value="Post"> -->
 
-    <div class="comment">
+        <div class="comment-list">
+            
+            <div class="comment-post">
+                <div class="user-img">
+                    <img src="images/Rory.jpg" alt="userimg">
+                </div>
 
-        <div class="comment-post">
-            <img src="images/Rory.jpg" alt="userimg">
-            <span class="comment-user">Rory Duncan</span> <span class="comment-time">1 days ago</span>
-            <p>Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I'm
-                very interested in these methods for developing a "Sustainable Web Design" strategy. I was woring on a
-                "green boilerplate" with tools like this a few years ago, but now the route to go seems to be bundling
-                cloud services into the design workflow.</p>
-            <span>Reply</span>
+                <div class="comment-body">
+                    <div class="comment-info"><a href="#" class="user-name">Rory Duncan</a> <span class="comment-time-tag">1 days ago</span></div>
 
-            <div class="comment-post-reply">
-                <img src="images/Peter.jpg" alt="userimg">
-                <span class="comment-user">Peter Chang</span> <span class="comment-time">2 days ago</span>
-                <p>I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a try
-                    to this Cloudinary. Thanks!</p>
-                <span>Reply</span>
+                    <p>Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I'm
+                        very interested in these methods for developing a "Sustainable Web Design" strategy. I was woring on a
+                        "green boilerplate" with tools like this a few years ago, but now the route to go seems to be bundling
+                        cloud services into the design workflow.</p>
+                    <p class="reply">Reply</p>
+                </div>
+            </div>
+
+            <!--  -->
+
+            <div class="comment-post comment-reply">
+                <div class="user-img">
+                    <img src="images/Peter.jpg" alt="userimg">
+                </div>
+
+                <div class="comment-body">
+                    <div class="comment-info"><a href="#" class="user-name">Peter Chang</a> <span class="comment-time-tag">2 days ago</span></div>
+
+                    <p>I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a try to this Cloudinary. Thanks!</p>
+                    <p class="reply">Reply</p>
+                </div>
             </div>
 
         </div>
@@ -252,13 +270,15 @@
 <footer class="footer">
   <div>
     <div class="primary-info roboto-slab">
-      <img src="images/footer-icon.jpg">
-      <h2 class="header-h2 med-grey"><span class="header-site-blog light-grey">Blog</span>.Modern Developer</h2>
+        <a href="#">
+            <img src="images/footer-icon.jpg">
+            <h2 class="header-h2 med-grey"><span class="footer-site-blog light-grey">Blog</span>.Modern Developer</h2>
+      </a>
     </div>
 
     <div class="secondary-info roboto">
-      <p class="med-grey">&copy; 2016 Modern Developer Inc.</p>
-      <div><a href="mailto:blog@moderndeveloper.com" target="_top" class="light-grey">blog@moderndeveloper.com</a></div>
+        <p class="med-grey">&copy; 2016 Modern Developer Inc.</p>
+        <div><a href="mailto:blog@moderndeveloper.com" target="_top" class="light-grey">blog@moderndeveloper.com</a></div>
     </div>
   </div>
 </footer>
