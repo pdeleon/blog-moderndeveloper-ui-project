@@ -7,6 +7,7 @@
           rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="prism/prism.css"/>
 </head>
 <body>
 <header>
@@ -15,7 +16,6 @@
         <h2><span class="highlight">Blog</span>.Modern Developer</h2>
     </div>
     <div class="search">
-        <!--<div class="header-search-icon"></div>-->
         <input type="text" id="searchTerm" name="searchTerm" placeholder="Search..."/>
         <button class="searchButton"><i class="fa fa-search"></i></button>
     </div>
@@ -47,18 +47,27 @@
             the post image, but the routine doesn't optimize images, so if the image is ver large, I may scale it down
             with HTML attributes but the download size is still massive.</p>
 
-        <ul>
-            <li>Javascript
-                <pre>
-<code>
-  1 var myArray=[6,5,4,3,1,2];
-  2 myArray.sort();
-  3 console.log(myArray);//-> 1,2,3,4,5,6
+        <div class="article-code tabs">
+            <ul class="tabs-list">
+                <li class="active"><a href="#code-javascript">Javascript</a></li>
+                <li class=""><a href="#code-result">Result</a></li>
+            </ul>
+            <div class="tabs-content">
+                <div class="tab-pane active" id="code-javascript">
+<pre class="line-numbers">
+<code class="language-javascript">var myArray=[6,5,4,3,1,2];
+myArray.sort();
+console.log(myArray);//-> 1,2,3,4,5,6</code>
+</pre>
+                </div>
+                <div class="tab-pane" id="code-result">
+<pre>
+<code class="language-javascript">[1, 2, 3, 4, 5, 6]
 </code>
-            </pre>
-            </li>
-            <li>Result</li>
-        </ul>
+</pre>
+                </div>
+            </div>
+        </div>
 
         <p>If you're looking to serve media via the &lt;picture&gt; element for different media queries, <a
                 href="#">Cloudinary has an excellent structure</a> for doing that well.</p>
@@ -106,19 +115,9 @@
     <aside>
         <div class="tabs">
             <ul class="tabs-list">
-                <li class="active">
-                    <a href="#recent-articles">
-                        Recent Articles
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#upcoming-posts">
-                        Upcoming Posts
-                    </a>
-                </li>
+                <li class="active"><a href="#recent-articles">Recent Articles</a></li>
+                <li class=""><a href="#upcoming-posts">Upcoming Posts</a></li>
             </ul>
-
-            <!-- Tab panes -->
             <div class="tabs-content">
                 <div class="tab-pane active" id="recent-articles">
                     <ul>
@@ -224,23 +223,27 @@
 
             <textarea placeholder="Your Comment" class="light-grey"></textarea>
 
-            <button>Post</button> 
+            <button>Post</button>
         </div>
         <!-- type="submit" value="Post"> -->
 
         <div class="comment-list">
-            
+
             <div class="comment-post">
                 <div class="user-img">
                     <img src="images/Rory.jpg" alt="userimg">
                 </div>
 
                 <div class="comment-body">
-                    <div class="comment-info"><a href="#" class="user-name">Rory Duncan</a> <span class="comment-time-tag">1 days ago</span></div>
+                    <div class="comment-info"><a href="#" class="user-name">Rory Duncan</a> <span
+                            class="comment-time-tag">1 days ago</span></div>
 
-                    <p>Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I'm
-                        very interested in these methods for developing a "Sustainable Web Design" strategy. I was woring on a
-                        "green boilerplate" with tools like this a few years ago, but now the route to go seems to be bundling
+                    <p>Do you know of other examples of node-based optimizers that work in a fashion similar to
+                        cloudinary? I'm
+                        very interested in these methods for developing a "Sustainable Web Design" strategy. I was
+                        woring on a
+                        "green boilerplate" with tools like this a few years ago, but now the route to go seems to be
+                        bundling
                         cloud services into the design workflow.</p>
                     <p class="reply">Reply</p>
                 </div>
@@ -254,9 +257,11 @@
                 </div>
 
                 <div class="comment-body">
-                    <div class="comment-info"><a href="#" class="user-name">Peter Chang</a> <span class="comment-time-tag">2 days ago</span></div>
+                    <div class="comment-info"><a href="#" class="user-name">Peter Chang</a> <span
+                            class="comment-time-tag">2 days ago</span></div>
 
-                    <p>I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a try to this Cloudinary. Thanks!</p>
+                    <p>I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a
+                        try to this Cloudinary. Thanks!</p>
                     <p class="reply">Reply</p>
                 </div>
             </div>
@@ -268,20 +273,22 @@
 </section>
 
 <footer class="footer">
-  <div>
-    <div class="primary-info roboto-slab">
-        <a href="#">
-            <img src="images/footer-icon.jpg">
-            <h2 class="header-h2 med-grey"><span class="footer-site-blog light-grey">Blog</span>.Modern Developer</h2>
-      </a>
-    </div>
+    <div>
+        <div class="primary-info roboto-slab">
+            <a href="#">
+                <img src="images/footer-icon.jpg">
+                <h2 class="header-h2 med-grey"><span class="footer-site-blog light-grey">Blog</span>.Modern Developer
+                </h2>
+            </a>
+        </div>
 
-    <div class="secondary-info roboto">
-        <p class="med-grey">&copy; 2016 Modern Developer Inc.</p>
-        <div><a href="mailto:blog@moderndeveloper.com" target="_top" class="light-grey">blog@moderndeveloper.com</a></div>
+        <div class="secondary-info roboto">
+            <p class="med-grey">&copy; 2016 Modern Developer Inc.</p>
+            <div><a href="mailto:blog@moderndeveloper.com" target="_top" class="light-grey">blog@moderndeveloper.com</a>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
-
+<script type="text/javascript" src="prism/prism.js"></script>
 </body>
 </html>
