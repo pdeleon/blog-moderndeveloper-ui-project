@@ -480,6 +480,10 @@ div.primary-info, div.primary-info h2 {
   display: inline-block;
 }
 
+div.primary-info a {
+  text-decoration: none;
+}
+
 footer.footer img {
   vertical-align: middle;
 }
