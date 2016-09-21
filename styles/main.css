@@ -61,6 +61,8 @@ header div.search button.searchButton {
   font-size: 1em;
   padding: 0.36em 0.7em;
   margin-left: -0.3em;
+  position: relative;
+  top: 1px;
 }
 
 section#main {
