@@ -576,7 +576,8 @@ section#comments button {
   outline: none;
 }
 
-section#comments button:hover {
+section#comments button:hover,
+aside div.email-subscription button:hover {
   background-color: #db3daf;
 }
 
