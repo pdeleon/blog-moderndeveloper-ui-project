@@ -1,3 +1,4 @@
+/* Styles added by Aashish Nagpal - Start */
 body {
   margin: 0;
   box-sizing: border-box;
@@ -135,6 +136,38 @@ section#main article h2 {
   color: #ae6fe6;
 }
 
+div.article-code.tabs ul.tabs-list li {
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+div.article-code.tabs ul.tabs-list li a {
+  color: #888 !important;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+div.article-code.tabs ul.tabs-list li a:hover {
+  text-decoration: none !important;
+}
+
+div.article-code.tabs ul.tabs-list li.active {
+  background-color: #f5f2f0;
+  border-color: #f5f2f0;
+  border-radius: 0;
+}
+
+div.article-code.tabs ul.tabs-list li.active a {
+  color: #db3daf !important;
+}
+
+div.article-code.tabs div.tabs-content {
+  border: 1px solid #f5f2f0;
+  background-color: #f5f2f0;
+  clear: both;
+  border-radius: 0;
+}
+
 section#main article div.related-articles {
   background-color: #e9e7e8;
   width: 100%;
@@ -243,6 +276,7 @@ section#main article div.tags-and-social div.tags a {
 section#main article div.tags-and-social div.tags a:hover {
   color: #db3daf;
   border-color: #db3daf;
+  text-decoration: none;
 }
 
 section#main article div.tags-and-social ul.social {
@@ -420,8 +454,9 @@ aside div.email-subscription button {
   width: 28%;
 }
 
+/* Styles added by Aashish Nagpal - End */
 
-/*Styles by pj_deleon*/
+/* Styles added by PJ Deleon - Start */
 footer.footer {
   position: relative;
   background-color: #242424;
@@ -440,7 +475,7 @@ footer.footer h2 {
   font-size: 1rem;
 }
 
-div.primary-info, div.primary-info h2{
+div.primary-info, div.primary-info h2 {
   margin: 0;
   display: inline-block;
 }
@@ -471,22 +506,21 @@ div.secondary-info a:hover {
 
 /* COLORS*/
 .light-grey {
-  color: #AAAAAA;
+  color: #aaa;
 }
 
 .med-grey {
-  color: #6A6869;
+  color: #6a6869;
 }
 
 /* FONTS*/
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
+
 .roboto-slab {
   font-family: 'Roboto Slab', serif;
 }
-
-
 
 /*
 ----------
@@ -497,7 +531,6 @@ COMMENT SECTION
 ----------
 ----------
 */
-
 
 section#comments {
   padding: 0 80px 75px 80px;
@@ -518,7 +551,7 @@ section#comments div.comments-container {
 section#comments textarea {
   width: 100%;
   height: 115px;
-  background-color: #6A6869;
+  background-color: #6a6869;
   border: 2px solid #242424;
   border-radius: 5px;
   resize: none;
@@ -556,6 +589,7 @@ div.comment-post:after {
   display: table;
   clear: both;
 }
+
 div.user-img {
   margin-right: 20px;
 }
@@ -608,3 +642,5 @@ p.reply:hover {
 .comment-reply {
   margin-left: 10%;
 }
+
+/* Styles added by PJ Deleon - End */
