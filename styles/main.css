@@ -437,7 +437,8 @@ aside div.email-subscription input[type="email"] {
   padding: 0.6em 0.5em;
   border-radius: 3px;
   display: table-cell;
-  width: 68%;
+  width: 65%;
+  margin-right: 3%;
 }
 
 aside div.email-subscription button {
@@ -447,11 +448,10 @@ aside div.email-subscription button {
   font-size: 1em;
   font-weight: 100;
   font-family: inherit;
-  padding: 0.6em 0.8em;
+  padding: 0.6em 0.1em;
   border-radius: 3px;
-  margin-left: 0.8em;
   display: table-cell;
-  width: 28%;
+  width: 32%;
 }
 
 /* Styles added by Aashish Nagpal - End */
