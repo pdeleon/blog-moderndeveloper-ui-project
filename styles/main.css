@@ -64,6 +64,8 @@ header div.search button.searchButton {
   padding: 0.36em 0.7em;
   margin-left: -0.3em;
   position: relative;
+  outline: none;
+  top: 1px;
 }
 
 section#main {
