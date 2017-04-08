@@ -53,6 +53,7 @@ header div.search input[type="text"] {
   color: #fff;
   background-color: #4d4d4d;
   width: 17em;
+  outline: none;
 }
 
 header div.search button.searchButton {
