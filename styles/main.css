@@ -565,6 +565,7 @@ section#comments textarea {
   padding: 16px;
   font-weight: 200;
   outline: none;
+  color: #fff;
 }
 
 section#comments button {
