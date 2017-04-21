@@ -1,0 +1,201 @@
+{
+  "article": {
+    "title": "Image Optimization with Cloudinary",
+    "writtenOn": "4/18/2017, 8:33:39 PM",
+    "author": {
+      "name": "Paul Irish",
+      "twitterUrl": "#",
+      "facebookUrl": "#",
+      "githubUrl": "#",
+      "googlePlusUrl": "#"
+    },
+    "featuredImageUrl": "https://a.featured.image.jpg",
+    "contentHtml": "<p>We're always looking for ways to improve site speed; we lazy load; minify and concatenate, create sprites, experiment with caching, and just about everyting else we can think of.</p><p>The idea behind image optimization is simple but the execution hasn't always been: each of those optimizations usually requires a separate solution which makes automation difficult. Enter Cloudinary: uploading, storing, manipulating, and delivering images and videos on the web.</p><h3>Using Cloudinary</h3><p>There are many use cases for a service like Cloudinary. When I think about my site, I see one obvious need: resized, optimized images on post list pages.<a href=\"#\">Google PageSpeed</a> crucifies my site for image size and I can't blame them: I have a regex routine that searches for the first image in a post and uses that as the post image, but the routine doesn't optimize images, so if the image is ver large, I may scale it down with HTML attributes but the download size is still massive.</p><ul class=\"code\"><li class=\"javascript\"><pre><code>var myArray=[6,5,4,3,1,2];myArray.sort();console.log(myArray);//-> 1,2,3,4,5,6</code></pre></li><li class=\"result\"><pre><code>1,2,3,4,5,6</code></pre></li></ul><p>If you're looking to serve media via the &lt;picture&gt; element for different media queries, <a href=\"#\">Cloudinary has an excellent structure for doing that well.</a></p><p>Hosting your videos with Cloudinary will allow you to have the same advantages of manipulation and performant cloud hosting as your images will have!</p><h3>Try Cloudinary!</h3><p><a href=\"#\">Cloudinary</a> is an awesome one-stop shop for uploading, storing, manipulating, and delivering images and video. The APIs are all intuitive, effective, and easy to use. The optimization plugs are all useful and the included face detection, sepia/greyscale transformations, and social media image creation a huge, handy bonus.</p>",
+    "relatedArticles": [
+      {
+        "title": "5 More Awesome New Mozilla Technologies You've Never Heard Of",
+        "url": "#"
+      },
+      {
+        "title": "Git Hook - npm install if package.json is Modified",
+        "url": "#"
+      },
+      {
+        "title": "Complete Server Stability and Security with Plesk",
+        "url": "#"
+      },
+      {
+        "title": "Use Mozilla Firefox DevTools in Chrome",
+        "url": "#"
+      },
+      {
+        "title": "Great Tools to Use in Your Projects",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "Optimization",
+      "Cloudinary",
+      "JPEG",
+      "Tutorial"
+    ],
+    "comments": [
+      {
+        "author": "Rory Duncan",
+        "writtenOn": "4/18/2017, 8:33:39 PM",
+        "contentHtml": "Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I'm very interested in these methods for developing a \"Sustainable Web Design\" strategy. I was woring on a \"green boilerplate\" with tools like this a few years ago, but now the route to go seems to be bundling cloud services into the design workflow.",
+        "replies": [
+          {
+            "author": "Peter Chang",
+            "writtenOn": "4/18/2017, 8:33:39 PM",
+            "contentHtml": "I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a try to this Cloudinary. Thanks!"
+          },
+          {
+            "author": "Rory Duncan",
+            "writtenOn": "4/18/2017, 8:33:39 PM",
+            "contentHtml": "You're welcome"
+          },
+          {
+            "author": "Peter Chang",
+            "writtenOn": "4/18/2017, 8:33:39 PM",
+            "contentHtml": "Would you mind providing some resources?"
+          }
+        ]
+      },
+      {
+        "author": "Rory Duncan",
+        "writtenOn": "4/18/2017, 8:33:39 PM",
+        "contentHtml": "Do you know of other examples of node-based optimizers that work in a fashion similar to cloudinary? I'm very interested in these methods for developing a \"Sustainable Web Design\" strategy. I was woring on a \"green boilerplate\" with tools like this a few years ago, but now the route to go seems to be bundling cloud services into the design workflow.",
+        "replies": [
+          {
+            "author": "Peter Chang",
+            "writtenOn": "4/18/2017, 8:33:39 PM",
+            "contentHtml": "I never heard of it. I'm using ShortPixel so far, with great results actually, but I'll give it a try to this Cloudinary. Thanks!"
+          },
+          {
+            "author": "Rory Duncan",
+            "writtenOn": "4/18/2017, 8:33:39 PM",
+            "contentHtml": "You're welcome"
+          },
+          {
+            "author": "Peter Chang",
+            "writtenOn": "4/18/2017, 8:33:39 PM",
+            "contentHtml": "Would you mind providing some resources?"
+          }
+        ]
+      }
+    ]
+  },
+  "recentArticles": [
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "All Trappings",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "All Trappings",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "All Trappings",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    },
+    {
+      "title": "All Trappings",
+      "writtenOn": "4/18/2017, 8:33:39 PM",
+      "url": "#"
+    }
+  ],
+  "upcomingArticles": [
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "All Trappings",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "All Trappings",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "All Trappings",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "Getting Your Selected Articles Published on Encyclopedia",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "Welcome to Encyclopedia Modern Developer",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    },
+    {
+      "title": "All Trappings",
+      "comingOn": "4/18/2017, 8:33:39 PM"
+    }
+  ]
+}
