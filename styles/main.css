@@ -454,6 +454,8 @@ aside div.email-subscription button {
   border-radius: 3px;
   display: table-cell;
   width: 32%;
+  outline: none;
+  cursor: pointer;
 }
 
 /* Styles added by Aashish Nagpal - End */
@@ -579,13 +581,13 @@ section#comments button {
   width: 165px;
   display: block;
   margin: 16px auto 45px auto;
+  outline: none;
+  cursor: pointer;
 }
 
 section#comments button:hover,
 aside div.email-subscription button:hover {
   background-color: #db3daf;
-  outline: none;
-  cursor: pointer;
 }
 
 div.comment-list {
