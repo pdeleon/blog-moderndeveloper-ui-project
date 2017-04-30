@@ -579,13 +579,13 @@ section#comments button {
   width: 165px;
   display: block;
   margin: 16px auto 45px auto;
-  cursor: pointer;
-  outline: none;
 }
 
 section#comments button:hover,
 aside div.email-subscription button:hover {
   background-color: #db3daf;
+  outline: none;
+  cursor: pointer;
 }
 
 div.comment-list {
