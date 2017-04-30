@@ -642,13 +642,25 @@ p.reply {
   color: #db3daf;
 }
 
-p.reply:hover {
+p.reply:hover,
+p.post:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+p.post {
+  margin: 25px 0 0 0;
+  color: #4b95e0;
 }
 
 .comment-reply {
   margin-left: 10%;
 }
 
+.gone {
+  display: none;
+}
+.show {
+  display: inline-block;
+}
 /* Styles added by PJ Deleon - End */
